@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@layer base {
+  .container1 {
+    max-width: 1900px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  svg {
+    cursor: pointer;
+  }
+}
