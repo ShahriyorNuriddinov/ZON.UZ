@@ -78,7 +78,7 @@ if (
 
         <div class="flex items-center justify-between w-[220px]">
           <p class="font-bold text-base text-[#212427]">${product.price} сум</p>
-          <button class="cart-btn p-2 border-2 rounded-full ${
+          <button class="cart-btn p-2 cursor-pointer border-2 rounded-full ${
             inCart
               ? "bg-blue-600 border-blue-600"
               : "border-gray-300 hover:bg-gray-100"

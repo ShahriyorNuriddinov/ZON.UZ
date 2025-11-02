@@ -1,22 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZON.UZ | Интернет-магазин</title>
-    <meta
-      name="description"
-      content="ZON.UZ - крупнейший интернет-магазин в Узбекистане. Широкий ассортимент электроники, бытовой техники и товаров для дома."
-    />
+    <title>Admin | dashboard</title>
     <link rel="stylesheet" href="./src/output.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="icon" type="image/png" href="./img/favicon.png" />
   </head>
-
-  <body class="bg-gray-50">
+  <body>
     <header class="container1 first-header">
       <div class="flex items-center justify-between py-3">
         <div class="flex items-center gap-4 bg-white">
@@ -132,7 +122,7 @@
 
         <a href="./admin.html">
           <button
-            class="flex items-center gap-2 border border-solid border-[#011c47] rounded-sm py-2 px-3"
+            class="flex cursor-pointer items-center gap-2 border border-solid border-[#011c47] rounded-sm py-2 px-3"
           >
             <svg
               width="21"
@@ -294,282 +284,10 @@
         </button>
       </div>
     </header>
-    <section class="container1 my-4">
-      <div class="flex justify-between items-center">
-        <div class="swiper mySwiper rounded-xl">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img class="w-[100%]" src="./img/swiper.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img class="w-[100%] h-auto" src="./img/swiper1.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img class="w-[100%]" src="./img/swiper1.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img class="w-[100%]" src="./img/swiper2.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img class="w-[100%]" src="./img/swiper3.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img class="w-[100%]" src="./img/swiper4.png" alt="" />
-            </div>
-          </div>
-          <div
-            class="swiper-button-next text-white bg-black/30 rounded-full p-7 hover:bg-black/50 transition-all"
-          ></div>
-          <div
-            class="swiper-button-prev text-white bg-black/30 rounded-full p-7 hover:bg-black/50 transition-all"
-          ></div>
-
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-    <main class="container1">
-      <div class="flex items-center justify-between">
-        <div
-          class="bg-[#eee] h-[180px] rounded-sm p-5 flex flex-col items-center gap-2"
-        >
-          <h1 class="font-bold text-lg text-black">Добро пожаловать!</h1>
-          <p class="font-normal text-center text-sm text-black w-[250px]">
-            Войдите, чтобы оставлять отзывы и пользоваться другими функциями
-            авторизованных пользователей.
-          </p>
-          <button
-            class="bg-[#5d78ff] rounded-md text-white font-medium text-sm p-2"
-          >
-            Войти в личный кабинет
-          </button>
-        </div>
-        <div
-          class="flex items-center h-[180px] gap-3 rounded-sm p-14 bg-[#d1dae6]"
-        >
-          <h2 class="font-bold text-lg text-center text-[#6682a9]">
-            Покупать <br />
-            как юрлицо
-          </h2>
-          <svg
-            width="48"
-            height="48"
-            viewBox="0 0 48 48"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M17.25 4.5H30.75C31.1625 4.5 31.5 4.8375 31.5 5.25V9H16.5V5.25C16.5 4.8375 16.8375 4.5 17.25 4.5ZM12 5.25V9H6C2.69063 9 0 11.6906 0 15V24H18H30H48V15C48 11.6906 45.3094 9 42 9H36V5.25C36 2.35313 33.6469 0 30.75 0H17.25C14.3531 0 12 2.35313 12 5.25ZM48 27H30V30C30 31.6594 28.6594 33 27 33H21C19.3406 33 18 31.6594 18 30V27H0V39C0 42.3094 2.69063 45 6 45H42C45.3094 45 48 42.3094 48 39V27Z"
-              fill="#6682A9"
-            />
-          </svg>
-        </div>
-        <div
-          class="flex items-center h-[180px] flex-col gap-3 rounded-sm p-10 bg-[#dbe1ff]"
-        >
-          <img src="./img/docZon.svg" alt="" />
-          <h2 class="font-bold text-lg text-center text-[#011c47]">
-            Электронный <br />
-            документооборот
-          </h2>
-        </div>
-        <div
-          style="
-            background: linear-gradient(
-              180deg,
-              #671abf 20%,
-              #a03291 70%,
-              #d24089 100%
-            );
-          "
-          class="flex h-[180px] items-center flex-col gap-3 rounded-sm p-7 bg-[#dbe1ff]"
-        >
-          <img src="./img/fade.svg" alt="" />
-          <h2 class="font-bold text-lg text-center text-white">
-            Онлайн меню для <br />
-            ресторанов и гостиниц
-          </h2>
-        </div>
-      </div>
-    </main>
-    <section class="container1">
-      <h1 class="font-medium text-2xl text-black">Популярные</h1>
-      <div id="product-container" class="box grid grid-cols-6 gap-6"></div>
-    </section>
     <section class="container1">
       <h1 class="font-medium text-2xl text-black">Бестселлеры</h1>
       <div id="products" class="box grid grid-cols-6 gap-6"></div>
     </section>
-    <section class="container1 mt-5">
-      <div class="flex items-center gap-5 my-6">
-        <h2 class="font-medium text-2xl text-black">Статьи</h2>
-        <button
-          class="border border-[#ddd] border-solid rounded-2xl p-2 font-medium text-base text-[#1b7da2]"
-        >
-          Смотреть все
-        </button>
-      </div>
-      <div class="grid grid-cols-5 gap-4">
-        <div
-          class="flex flex-1 flex-col border-[#e5e7eb] border-solid border rounded-md"
-        >
-          <div class="">
-            <img class="w-full" src="./img/review1.png" alt="" />
-          </div>
-          <div class="">
-            <h2 class="font-normal text-base text-[#000]">
-              <span class="text-[#6682a9]">13.06.2023</span><br />
-              Виброметры для двигателей и механизмов
-            </h2>
-          </div>
-        </div>
-        <div
-          class="flex flex-1 flex-col border-[#e5e7eb] border-solid border rounded-md"
-        >
-          <div class="">
-            <img class="w-full" src="./img/review2.png" alt="" />
-          </div>
-          <div class="">
-            <h2 class="font-normal text-base text-[#000]">
-              <span class="text-[#6682a9]">12.06.2023</span><br />Частотный
-              преобразователь — что такое и для чего он нужен
-            </h2>
-          </div>
-        </div>
-        <div
-          class="flex flex-1 flex-col border-[#e5e7eb] border-solid border rounded-md"
-        >
-          <div class="">
-            <img class="w-full" src="./img/review3.png" alt="" />
-          </div>
-          <div class="">
-            <h2 class="font-normal text-base text-[#000]">
-              <span class="text-[#6682a9]">09.04.2023</span><br />Термометр для
-              измерения температуры объекта
-            </h2>
-          </div>
-        </div>
-        <div
-          class="flex flex-1 flex-col border-[#e5e7eb] border-solid border rounded-md"
-        >
-          <div class="">
-            <img class="w-full" src="./img/review4.png" alt="" />
-          </div>
-          <div class="">
-            <h2 class="font-normal text-base text-[#000]">
-              <span class="text-[#6682a9]">10.04.2023</span><br />Люксометр -
-              Измеритель яркости и освещённости
-            </h2>
-          </div>
-        </div>
-        <div
-          class="flex flex-1 flex-col border-[#e5e7eb] border-solid border rounded-md"
-        >
-          <div class="">
-            <img class="w-full" src="./img/review5.png" alt="" />
-          </div>
-          <div class="">
-            <h2 class="font-normal text-base text-[#000]">
-              <span class="text-[#6682a9]">10.04.2023</span><br />Люксометр -
-              Измеритель яркости и освещённости
-            </h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="container1 mt-5">
-      <div class="grid grid-cols-4 gap-3">
-        <div
-          class="border-solid p-7 h-[240px] border-[#e9e9e9] border rounded-sm"
-        >
-          <h2 class="font-bold text-base text-[#222]">Контакты</h2>
-          <p class="font-nromal text-base text-[#6682a9]">Call-центр</p>
-          <p class="font-normal text-base text-[#222]">+998-78 555-35-00</p>
-          <p class="font-nromal text-base text-[#6682a9]">Эл. почта</p>
-          <p class="font-normal text-base text-[#222]">info@zon.uz</p>
-          <p class="font-normal text-base text-[#6682a9]">График работы</p>
-          <div class="flex items-center justify-between">
-            <div class="">
-              <p class="font-nromal text-base text-[#222]">В будние</p>
-              <p class="font-nromal text-base text-[#222]">Суббота</p>
-            </div>
-            <div class="">
-              <p>с 09:00 до 18:00</p>
-              <p>с 09:00 до 18:00</p>
-            </div>
-          </div>
-        </div>
-        <div class="grid grid-rows-2">
-          <div
-            class="border-solid p-4 h-[115px] border-[#e9e9e9] border rounded-sm"
-          >
-            <h2 class="font-bold text-base text-[#222]">
-              Мы в социальных сетях
-            </h2>
-            <div class="flex p-4 items-center justify-around">
-              <a href="">
-                <img src="./img/telegram.svg" alt="" />
-              </a>
-              <a href="">
-                <img src="./img/youtube.svg" alt="" />
-              </a>
-              <a href="">
-                <img src="./img/instagram.svg" alt="" />
-              </a>
-              <a href="">
-                <img src="./img/facebook.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <div
-            class="border-solid p-4 h-[120px] border-[#e9e9e9] border rounded-sm"
-          >
-            <h2 class="font-bold text-base text-[#222]">
-              Мы в социальных сетях
-            </h2>
-            <div class="flex items-center p-4 justify-around">
-              <a href="">
-                <img src="./img/payme.svg" alt="" />
-              </a>
-              <a href="">
-                <img src="./img/link.svg" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="border-solid p-7 h-[240px] border-[#e9e9e9] border rounded-sm"
-        >
-          <h2 class="font-bold text-base text-[#222]">Компания</h2>
-          <div class="flex gap-3 items-center">
-            <div class="">
-              <p class="font-normal text-[#007aa7]">О нас</p>
-              <p class="font-normal text-[#007aa7]">Реквизиты</p>
-            </div>
-            <div class="">
-              <p class="font-normal text-[#007aa7]">Продавайте на Zon.uz</p>
-              <p class="font-normal text-[#007aa7]">Покупать как юрлицо</p>
-            </div>
-          </div>
-          <p class="font-normal text-[#007aa7]">Контакты</p>
-          <p class="font-normal text-[#007aa7]">Вакансии</p>
-          <p class="font-normal text-[#007aa7]">Карта сайта</p>
-          <p class="font-normal text-[#007aa7]">Публичная оферта</p>
-        </div>
-        <div
-          class="flex flex-col p-7 border-solid h-[240px] border-[#e9e9e9] border rounded-sm"
-        >
-          <h2 class="font-bold text-base text-[#222]">Помощь</h2>
-          <p class="font-normal text-[#007aa7]">Вопросы и ответы</p>
-          <p class="font-normal text-[#007aa7]">Условия рассрочки</p>
-          <p class="font-normal text-[#007aa7]">Способ оптлаты</p>
-          <p class="font-normal text-[#007aa7]">Доставка</p>
-          <p class="font-normal text-[#007aa7]">Возврат товаров</p>
-          <p class="font-normal text-[#007aa7]">Сервисные центры</p>
-        </div>
-      </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
