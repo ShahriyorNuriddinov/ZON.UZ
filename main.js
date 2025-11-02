@@ -226,9 +226,10 @@ if (document.querySelector(".cart-container")) {
         ${itemsHTML}
         <div class="flex justify-between items-center p-4 border-t border-gray-200 mt-4">
           <p class="font-bold text-xl">Общая сумма: ${totalPrice} сум</p>
+        <a href="https://zon.uz/account/auth/signin?ssoState=69076ac63b6d33045a590786">
           <button class="bg-green-500 text-white p-3 rounded-sm hover:bg-green-600 transition">
             Оформить заказ
-          </button>
+          </button></a>
         </div>
       </div>
       <div class="w-full">
