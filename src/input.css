@@ -8,4 +8,29 @@
   svg {
     cursor: pointer;
   }
+  .first-header.hidden {
+    opacity: 0;
+    transform: translateY(-100%);
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .second-header.fixed {
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
 }
