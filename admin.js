@@ -66,7 +66,7 @@ function showProducts(products) {
                                  class="w-16 h-16 object-contain border rounded">
                             <div>
                                 <h3 class="font-semibold text-gray-800">${product.title}</h3>
-                                <p class="text-green-600 font-medium">${product.price}</p>
+                                <p class="text-green-600 font-medium">${product.price.toLocaleString()}</p>
                             
                             </div>
                         </div>

@@ -77,7 +77,7 @@ if (
         </div>
 
         <div class="flex items-center justify-between w-[220px]">
-          <p class="font-bold text-base text-[#212427]">${product.price} сум</p>
+          <p class="font-bold text-base text-[#212427]">${product.price.toLocaleString()} сум</p>
           <button class="cart-btn p-2 cursor-pointer border-2 rounded-full ${
             inCart
               ? "bg-blue-600 border-blue-600"
@@ -198,12 +198,16 @@ if (document.querySelector(".cart-container")) {
       totalPrice += itemPrice * quantity;
 
       itemsHTML += `
-        <div class="flex items-center justify-between p-4 border-b border-gray-200" data-id="${item.id}">
+        <div class="flex items-center justify-between p-4 border-b border-gray-200" data-id="${
+          item.id
+        }">
           <div class="flex items-center gap-4">
-            <img src="${item.img}" alt="${item.title}" class="w-16 h-16 object-contain">
+            <img src="${item.img}" alt="${
+        item.title
+      }" class="w-16 h-16 object-contain">
             <div>
               <h3 class="font-bold text-lg">${item.title}</h3>
-              <p class="text-gray-600">${item.price} сум</p>
+              <p class="text-gray-600">${item.price.toLocaleString()} сум</p>
             </div>
           </div>
           <div class="flex items-center gap-4">
@@ -212,7 +216,9 @@ if (document.querySelector(".cart-container")) {
               <span class="quantity">${quantity}</span>
               <button class="quantity-btn bg-gray-200 w-8 h-8 rounded" data-index="${index}" data-action="increase">+</button>
             </div>
-            <button class="remove-btn bg-red-500 text-white p-2 rounded hover:bg-red-600" data-id="${item.id}">
+            <button class="remove-btn bg-red-500 text-white p-2 rounded hover:bg-red-600" data-id="${
+              item.id
+            }">
               Удалить
             </button>
           </div>
@@ -225,7 +231,7 @@ if (document.querySelector(".cart-container")) {
         <h1 class="font-bold text-2xl text-[#000] mb-6">Корзина</h1>
         ${itemsHTML}
         <div class="flex justify-between items-center p-4 border-t border-gray-200 mt-4">
-          <p class="font-bold text-xl">Общая сумма: ${totalPrice} сум</p>
+          <p class="font-bold text-xl">Общая сумма: ${totalPrice.toLocaleString()} сум</p>
         <a href="https://zon.uz/account/auth/signin?ssoState=69076ac63b6d33045a590786">
           <button class="bg-green-500 text-white p-3 rounded-sm hover:bg-green-600 transition">
             Оформить заказ
@@ -310,15 +316,21 @@ if (document.querySelector(".like-container")) {
 
     likedItems.forEach((item) => {
       itemsHTML += `
-        <div class="flex items-center justify-between p-4 border-b border-gray-200" data-id="${item.id}">
+        <div class="flex items-center justify-between p-4 border-b border-gray-200" data-id="${
+          item.id
+        }">
           <div class="flex items-center gap-4">
-            <img src="${item.img}" alt="${item.title}" class="w-16 h-16 object-contain">
+            <img src="${item.img}" alt="${
+        item.title
+      }" class="w-16 h-16 object-contain">
             <div>
               <h3 class="font-bold text-lg">${item.title}</h3>
-              <p class="text-gray-600">${item.price} сум</p>
+              <p class="text-gray-600">${item.price.toLocaleString()} сум</p>
             </div>
           </div>
-          <button class="remove-like-btn bg-red-500 text-white p-2 rounded hover:bg-red-600" data-id="${item.id}">
+          <button class="remove-like-btn bg-red-500 text-white p-2 rounded hover:bg-red-600" data-id="${
+            item.id
+          }">
             Удалить
           </button>
         </div>
